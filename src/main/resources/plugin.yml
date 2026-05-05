@@ -1,0 +1,18 @@
+main: dev.drygo.XPlushes.XPlushes
+name: xPlushes
+version: 0.0.13
+api-version: 1.20
+authors:
+  - Drygo
+commands:
+  xplushes:
+    aliases: [xpp, plush, plushes]
+    description: Open the xPlushes shop or manage the plugin.
+    usage: /xplushes [reload|help|<player>]
+permissions:
+  xplushes.use:
+    description: Allows opening the plush shop.
+    default: true
+  xplushes.admin:
+    description: Allows reloading and opening the menu for other players.
+    default: op

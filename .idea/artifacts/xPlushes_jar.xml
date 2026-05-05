@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="xPlushes:jar">
+    <output-path>$USER_HOME$/OneDrive/Desktop</output-path>
+    <root id="archive" name="xPlushes.jar">
+      <element id="module-output" name="xPlushes" />
+    </root>
+  </artifact>
+</component>

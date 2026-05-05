@@ -1,0 +1,48 @@
+prefix: "#B3A3FF&lx&f&lPlushes &8»&r"
+commands:
+  no_permission: "%prefix% #FF0000🚫 No tienes permiso para hacer esto."
+  open:
+    only_player: "%prefix% #FF0000🚫 This command can only be used by players."
+    cache_not_loaded: "%prefix% #FF0000🚫 Loading player data, please wait."
+    player_not_found: "%prefix% #FF0000🚫 Jugador no encontrado."
+    opened_for: "%prefix% #a0ff72✔ Menú abierto para &f%target%&r."
+  reload:
+    error: "%prefix% #FF0000🚫 Failed on plugin reload."
+    success: "%prefix% #a0ff72✔ Plugin reloaded."
+  help:
+    - ""
+    - "&f&lxᴘʟᴜꜱʜᴇꜱ ᴄᴏᴍᴍᴀɴᴅ ᴜꜱᴀɢᴇꜱ:"
+    - ""
+    - "#fff18d/xᴘᴘ &7- Abre la tienda de peluches"
+    - "#fff18d/xᴘᴘ <jugador> &7- Abre la tienda para otro jugador"
+    - "#fff18d/xᴘᴘ reload &7- Recarga la configuración"
+    - "#fff18d/xᴘᴘ help &7- Muestra esta ayuda"
+    - ""
+menu:
+  items:
+    close: "#ff4040Cerrar"
+  plushes:
+    title: "ॶॶ&fॸ"
+    plush:
+      name: "#B3A3FFPeluche de %name%"
+      lore:
+        - "#FFF2A1¡Haz click en este item"
+        - "#FFF2A1para comprar el peluche"
+        - "#FFF2A1de &f%name%!"
+    own:
+      name: "#8bf3fcTu Peluche"
+      lore:
+        - "#66aab0¡Haz click en este item"
+        - "#66aab0para comprar tu propio"
+        - "#66aab0peluche de tu skin!"
+items:
+  plush:
+    name: "#B3A3FFPeluche de %name%"
+    lore:
+      - "#776cadEnseñaselo a %name%"
+      - "#776cady dile que duermes con el :?"
+broadcast:
+  buy:
+    own: "#8bf3fc&l🧸 &r#8bf3fcHas comprado tu propio peluche."
+    plush: "#B3A3FF&l🧸 #B3A3FFHas comprado el peluche de &f%name%&r#B3A3FF."
+    inventory_full: "%prefix% #FFD166⚠ Tu inventario estaba lleno; tiramos el peluche al suelo."
