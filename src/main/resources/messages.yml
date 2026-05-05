@@ -14,7 +14,7 @@ commands:
     - "&f&lxᴘʟᴜꜱʜᴇꜱ ᴄᴏᴍᴍᴀɴᴅ ᴜꜱᴀɢᴇꜱ:"
     - ""
     - "#fff18d/xᴘᴘ &7- Abre la tienda de peluches"
-    - "#fff18d/xᴘᴘ <jugador> &7- Abre la tienda para otro jugador"
+    - "#fff18d/xᴘᴘ <jugador> [--silent] &7- Abre la tienda para otro jugador"
     - "#fff18d/xᴘᴘ reload &7- Recarga la configuración"
     - "#fff18d/xᴘᴘ help &7- Muestra esta ayuda"
     - ""

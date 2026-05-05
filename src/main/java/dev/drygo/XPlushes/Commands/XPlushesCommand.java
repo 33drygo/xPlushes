@@ -62,7 +62,8 @@ public class XPlushesCommand implements CommandExecutor {
                         return true;
                     }
                     MenuManager.openMenu(Menu.PLUSH, target);
-                    if (!sender.equals(target)) {
+                    boolean silent = hasFlag(args, "--silent", "-s");
+                    if (!silent && !sender.equals(target)) {
                         sender.sendMessage(ChatUtils.getMessage("commands.open.opened_for", null)
                                 .replace("%target%", target.getName()));
                     }
@@ -85,6 +86,15 @@ public class XPlushesCommand implements CommandExecutor {
         }
         MenuManager.openMenu(Menu.PLUSH, player);
         return true;
+    }
+
+    private static boolean hasFlag(String[] args, String... flags) {
+        for (int i = 1; i < args.length; i++) {
+            for (String f : flags) {
+                if (args[i].equalsIgnoreCase(f)) return true;
+            }
+        }
+        return false;
     }
 
     private boolean hasUse(CommandSender sender) {
